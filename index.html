@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Miriam Galicia">
+    <meta name="description" content="Portafolio de desarrollo web de Miriam Galicia">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Miriam Galicia | Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/dc/0c/08/dc0c087ae89f54cf91ce0ff3b6a5e398.jpg">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="img/mandala 2.jpg" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="img/tercer foto.jpg" alt="Foto de Miriam">
+        <h1>It´s me, Hi</h1>
+        <!--<h2>Desarrollo sitios web relacionados con química.</h2>-->
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <!--<div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="img/matraz.jpg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>-->
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Miriam Galicia</h2>
+        <p class="seccion-texto">Me considero una persona creativa, resiliente, con habilidad para la resolución de problemas, además soy una persona organizada y proactiva.
+          Me gusta trabajar en equipo, escuchar y proponer nuevas ideas, así como la innovación.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Actualmente estoy trabajando en una página web enfocada en mi negocio. Otro proyecto que he realizado es un clon de Google. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Artículos</p>
+            <p>Este espacio esta enfocado en proyectos para la divulgación cientifica, en especial los que tienen que ver con Química</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Escribir</span>
+              <span class="badge text-bg-primary">Editar</span>
+              <span class="badge text-bg-primary">Blogs</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Soy estudiante de Química en la Facultad de Química UNAM, pero además busco realizar proyectos que involucren mi carrera con el desarrollo web</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Tecnolochicas PRO</span>
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+              <span class="badge text-bg-primary">Química</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://i.pinimg.com/564x/e1/81/e5/e181e554ce229d93ae953516dfeb5a60.jpg" alt="Proyecto 1 Clon">
+              <div class="overlay">
+                <p>Clon de Google</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/miriam-galicia/Clon-Google.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://miriam-galicia.github.io/Clon-Google/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="data:image/jpeg;base64,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" alt="Proyecto 2">
+              <div class="overlay">
+                <p>Química reticular</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/miriam-galicia/Quimica-reticular.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://miriam-galicia.github.io/Quimica-reticular/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://i.pinimg.com/564x/fb/95/14/fb95146bc6aaa42c0b3eb9ec2f694e04.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Página web Bolis</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/miriam-galicia/PagwebBolis.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://miriam-galicia.github.io/PagwebBolis/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <!--<div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto4.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <!-- <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto5.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <!--<div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto6.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <a href="https://github.com/miriam-galicia" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="img/isaac.jpg" alt="Foto de Isaac">
+              <p class="testimonio-texto">Me gustó como quedó.
+                Solo estaría bien si más adelante se pudiera optimizar más detalles. Fuera de eso todo lo demás se ve bien, me encanta el diseño, los colores son amigables.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Isaac Benumea</p>
+                <p class="cargo">Emprendedor</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="img/FQ.jpg" alt="Foto FQ">
+              <p class="testimonio-texto">Aunque todavia esta en desarrollo la página, considero que va por buen camino</p>
+              <div class="testimonio-info">
+                <p class="cliente">FQ</p>
+                <p class="cargo">Divulgación</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.svg" alt="Foto de Leonardo">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Leonardo</p>
+                <p class="cargo">Director de AprendeAProgramar</p>
+              </div>
+            </div>
+          </div>-->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:miriamgaliciagrimaldo@gmail.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="https://i.pinimg.com/564x/73/28/2d/73282d74e2ca23f1e408064559fd4599.jpg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Solo porque aún no estés donde quieres estar, no significa que no estés llegando a algún sitio -TS.<br>Creemos un proyecto juntos.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <!--<a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>-->
+        <a href="https://github.com/miriam-galicia" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/miriam-galicia-grimaldo-866a81209" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <!--<<a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>-->
+        <a href="mailto:miriamgaliciagrimaldo@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Miriam Galicia (2023) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
